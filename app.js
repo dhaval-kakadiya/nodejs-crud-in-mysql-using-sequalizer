@@ -5,6 +5,7 @@ const port = process.env.PORT || 3000;
 require("./config/db.config");
 const routes = require("./routes/index")
 
+// for parse body data
 app.use(express.json({limit:'50mb'}))
 app.use(express.urlencoded({limit:'50mb',extended:false}))
 
